@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: soup-postgres-quarkus-blast
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/adamevin-tenant/quarkus-blast/soup-postgres-quarkus-blast@sha256:ebd4863314241d1f296c88635a01dc9dc5ecbe9e63af9c23184503d44e22eab2
+        name: blast-postgres
+        resources: {}
+status: {}
