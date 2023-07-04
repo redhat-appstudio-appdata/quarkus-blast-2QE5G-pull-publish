@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app: quarkus-blast
+    app.kubernetes.io/component: blast-postgres
+    app.kubernetes.io/instance: quarkus-blast
+    app.kubernetes.io/name: quarkus-blast
+    component: blast-postgres
+  name: blast-postgres-data
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---

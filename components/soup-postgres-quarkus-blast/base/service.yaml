@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: quarkus-blast
+    app.kubernetes.io/component: blast-postgres
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: soup-postgres-quarkus-blast
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: soup-postgres-quarkus-blast
+    app.kubernetes.io/part-of: quarkus-blast
+    component: blast-postgres
+  name: soup-postgres-quarkus-blast
+spec:
+  ports:
+  - port: 5432
+    protocol: TCP
+    targetPort: 5432
+  selector:
+    app: quarkus-blast
+    app.kubernetes.io/instance: soup-postgres-quarkus-blast
+    component: blast-postgres
+  type: NodePort
+status:
+  loadBalancer: {}
