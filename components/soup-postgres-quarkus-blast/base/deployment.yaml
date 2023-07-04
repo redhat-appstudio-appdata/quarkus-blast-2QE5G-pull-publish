@@ -37,7 +37,7 @@ spec:
           value: blast
         - name: POSTGRES_USER
           value: blast
-        image: quay.io/tpetkos/blast-postgres:latest
+        image: quay.io/redhat-user-workloads/adamevin-tenant/quarkus-blast/soup-postgres-quarkus-blast@sha256:ebd4863314241d1f296c88635a01dc9dc5ecbe9e63af9c23184503d44e22eab2
         name: blast-postgres
         ports:
         - containerPort: 5432
