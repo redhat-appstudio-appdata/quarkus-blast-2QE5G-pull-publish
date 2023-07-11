@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: soup-postgres-quarkus-blast
     app.kubernetes.io/part-of: quarkus-blast
-  name: soup-postgres-quarkus-blasxvb
+  name: soup-postgres-quarkus-blaljky
 spec:
   port:
     targetPort: 5432
